@@ -13,13 +13,14 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import CesptLogo from './../images/cespt-logo.png';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Jorge López
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -96,15 +97,16 @@ export default function Checkout() {
       <CssBaseline />
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>
+          <img src={CesptLogo} alt= "Comisión Estatal de Servicios Públicos Tijuana" height="50"/>
           <Typography variant="h6" color="inherit" noWrap>
-            Company name
+            CESPT
           </Typography>
         </Toolbar>
       </AppBar>
       <main className={classes.layout}>
         <Paper className={classes.paper}>
           <Typography component="h1" variant="h4" align="center">
-            Checkout
+            Datos de Tarjeta
           </Typography>
           <Stepper activeStep={activeStep} className={classes.stepper}>
             {steps.map((label) => (
