@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Checkout from './App';
+import Checkout from './checkout/Checkout';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
